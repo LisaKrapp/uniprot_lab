@@ -1,0 +1,37 @@
+version: "1.0"
+name: uniprot
+
+services:
+  phpmyadmin:
+    image: docker.io/phpmyadmin/phpmyadmin:latest
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+
+  mysql:
+    image: docker.io/library/mysql:latest
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_passwd
+      - MYSQL_DATABASE=uniprot_db
+      - MYSQL_USER=uniprot_user
+      - MYSQL_PASSWORD=uniprot_passwd
+    volumes:
+      - uniprot_mysql:/var/lib/mysql
+
+  neo4j:
+    image: docker.io/library/neo4j:latest
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - uniprot_neo4j_data:/data
+    environment:
+      NEO4J_AUTH: neo4j/neo4j_passwd
+
+volumes:
+  uniprot_neo4j_data:
+  uniprot_mysql:

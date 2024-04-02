@@ -1,0 +1,4 @@
+	Entry	Protein names	Gene Names	Organism	Organism (ID)	Gene Ontology IDs	BRENDA
+0	A0A0E3T3B5	Aminoaldehyde dehydrogenase 2, peroxisomal (MdAMADH2) (EC 1.2.1.-) (Aminobutyraldehyde dehydrogenase AMADH2) (EC 1.2.1.19)	Gene1 Gene2 Gene3	Malus domestica (Apple) (Pyrus malus)	3750	GO:0005777; GO:0019145; GO:0019285; GO:0033737; GO:0046872; GO:0110095	EC.1; 1.1.1.1;
+1	A0A0E3T552	Aminoaldehyde dehydrogenase 1, peroxisomal (MdAMADH1) (EC 1.2.1.-) (Aminobutyraldehyde dehydrogenase AMADH1) (EC 1.2.1.19)	AMADH1	Malus domestica (Apple) (Pyrus malus)	3750	GO:0005829; GO:0019145; GO:0019285; GO:0033737; GO:0046872; GO:0110095	1.2.1.19;
+2	test_entry	test_name		Malus domestica	3750		

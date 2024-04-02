@@ -1,0 +1,74 @@
+@prefix brenda: <https://www.brenda-enzymes.org/enzyme.php?ecno=> .
+@prefix node: <https://plab2.bit.uni-bonn.de/node#> .
+@prefix relation: <https://plab2.bit.uni-bonn.de/relation#> .
+@prefix uniprot: <http://purl.uniprot.org/uniprot/> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+
+uniprot:A0A0E3T3B5 a node:Enzyme,
+        node:Protein ;
+    relation:entry_name "A0A0E3T3B5"^^xs:string ;
+    relation:gene_id <Gene1>,
+        <Gene2>,
+        <Gene3> ;
+    relation:go_id <GO:0005777>,
+        <GO:0019145>,
+        <GO:0019285>,
+        <GO:0033737>,
+        <GO:0046872>,
+        <GO:0110095> ;
+    relation:organism "Malus domestica (Apple) (Pyrus malus)"^^xs:string ;
+    relation:protein_name "Aminoaldehyde dehydrogenase 2, peroxisomal (MdAMADH2) (EC 1.2.1.-) (Aminobutyraldehyde dehydrogenase AMADH2) (EC 1.2.1.19)"^^xs:string ;
+    relation:xref_brenda brenda:1.2.1.19,
+        brenda:EC.1 .
+
+uniprot:A0A0E3T552 a node:Enzyme,
+        node:Protein ;
+    relation:entry_name "A0A0E3T552"^^xs:string ;
+    relation:gene_id <AMADH1> ;
+    relation:go_id <GO:0005829>,
+        <GO:0019145>,
+        <GO:0019285>,
+        <GO:0033737>,
+        <GO:0046872>,
+        <GO:0110095> ;
+    relation:organism "Malus domestica (Apple) (Pyrus malus)"^^xs:string ;
+    relation:protein_name "Aminoaldehyde dehydrogenase 1, peroxisomal (MdAMADH1) (EC 1.2.1.-) (Aminobutyraldehyde dehydrogenase AMADH1) (EC 1.2.1.19)"^^xs:string ;
+    relation:xref_brenda brenda:1.2.1.19 .
+
+uniprot:test_entry a node:Protein ;
+    relation:entry_name "test_entry"^^xs:string ;
+    relation:organism "apple"^^xs:string ;
+    relation:protein_name "test_name;"^^xs:string .
+
+<AMADH1> a node:Gene_Name ;
+    relation:gene_name "AMADH1"^^xs:string .
+
+<GO:0005777> a node:GO_term .
+
+<GO:0005829> a node:GO_term .
+
+<Gene1> a node:Gene_Name ;
+    relation:gene_name "Gene1"^^xs:string .
+
+<Gene2> a node:Gene_Name ;
+    relation:gene_name "Gene2"^^xs:string .
+
+<Gene3> a node:Gene_Name ;
+    relation:gene_name "Gene3"^^xs:string .
+
+brenda:EC.1 a node:EC_number ;
+    relation:ec_number "EC.1"^^xs:string .
+
+<GO:0019145> a node:GO_term .
+
+<GO:0019285> a node:GO_term .
+
+<GO:0033737> a node:GO_term .
+
+<GO:0046872> a node:GO_term .
+
+<GO:0110095> a node:GO_term .
+
+brenda:1.2.1.19 a node:EC_number ;
+    relation:ec_number "1.2.1.19"^^xs:string .
+
