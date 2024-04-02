@@ -163,3 +163,4 @@ src/uniprot/__pycache__
 tests/__pycache__
 test_uniprot.db
 .pdm-build
+.vscode
